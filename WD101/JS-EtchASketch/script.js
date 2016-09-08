@@ -7,5 +7,9 @@ $(document).ready(function(){
 
 	$(".grid").hover(function(){
 		$(this).addClass("highlight")
-	})
+	});
+
+	$(".cleargrid").click(function(){
+		$(".grid").removeClass("highlight")
+	});
 });
