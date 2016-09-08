@@ -4,4 +4,8 @@ $(document).ready(function(){
 			$("<div>").addClass("grid").appendTo("#container");
 		}
 	}
+
+	$(".grid").hover(function(){
+		$(this).addClass("highlight")
+	})
 });
