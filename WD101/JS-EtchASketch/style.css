@@ -1,1 +1,14 @@
+#container {
+	height: 400px;
+	width: 400px;
+	background-color: black;
+}
 
+.grid {
+	height: 23px;
+	width: 23px;
+	margin: 1px;
+	display: inline-block;
+	float: left;
+	background-color: white;
+}
