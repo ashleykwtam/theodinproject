@@ -1,7 +1,12 @@
+html, body {height:100%;}
+html {display:table; width:100%;}
+body {display:table-cell; text-align:center; vertical-align:middle;}
+
 #container {
 	height: 600px;
 	width: 600px;
 	background-color: black;
+	margin: auto;
 }
 
 .grid {

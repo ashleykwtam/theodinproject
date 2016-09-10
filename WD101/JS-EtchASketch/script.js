@@ -2,28 +2,30 @@ $(document).ready(function(){
 	initialGrid();
 
 	$(".grid").hover(function(){
-		$(this).addClass("highlight")
+		$(this).addClass("highlight");
 	});
 
 	$(".cleargrid").click(function(){
-		$(".grid").removeClass("highlight")
+		$(".grid").removeClass("highlight");
 	});
 
 	$(".newgrid").click(function(){
+		$(".grid").removeClass("highlight");
 		newGrid();
 	});
 });
 
 function initialGrid() {
-		for (var x = 0; x < 16; x++) {
-		for (var y = 0; y < 16; y++) {
+		for (var x = 0; x < 64; x++) {
+		for (var y = 0; y < 64; y++) {
 			$("<div>").addClass("grid").appendTo("#container");
 		}
 	}
+
 }
 
 function newGrid() {
-	
+
 	var newgrid = prompt("Please enter new size", "16");
 
 	var newheight = (600 / newgrid) - 3
